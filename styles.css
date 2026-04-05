@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex; flex-direction: column;
+    margin: 0 auto;
+}
+
+button {
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+}
+    button:active {
+        background-color: rgb(96, 96, 96);
+    }
+
+.contenedor {
+    min-height: 100vh; width: 100%;
+    margin: 0 auto;
+    display: flex; flex-direction: column; align-items: center;
+    background-color: rgb(211, 211, 172);
+}
+    .titulo {
+        display: flex; align-items: center; justify-content: center;
+        width: 100%;
+        padding: 4rem;
+        gap: 1rem;
+        background-color: beige;
+    }
+        .titulo h1 {
+            margin: 0;
+            letter-spacing: 0.2rem;
+            font-size: 3rem;
+            text-shadow: 0px 0px 2px black;
+        }
+        .titulo i {
+            font-size: 3rem;
+        }
+
+    .introduceTareas {
+        display: flex; justify-content: center; align-items: center;
+        width: 100%;
+        gap: 2rem;
+        padding: 2rem;
+    }
+        .introduceTareas input {
+            padding: 0.5rem;
+            width: 20rem;
+            height: 2rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 3px solid rgb(1, 170, 1);
+        }
+            .introduceTareas input:focus {
+                outline: none;
+                box-shadow: 0px 0px 5px green;
+            }
+        
+    
+    .contenedorTareas {
+        display: flex; justify-content: space-around;
+        width: 100%;
+    }
+
+        .tareas {
+            width: 49%;
+            text-align: center;
+            border: 2px solid green; border-radius: 5px;
+            box-shadow: 0px 0px 4px green;
+            background-color: rgb(216, 216, 151);
+
+        }
+            .tituloTareas {
+                display: flex; align-items: center; justify-content: center;
+                gap: 1rem;
+                border-bottom: 2px solid green;
+                box-shadow: 0px 0px 4px green;
+            }
+                .tituloTareas i {
+                    font-size: 2rem;
+                    color: rgb(1, 170, 1);
+                }
+
+        .tareas li {
+            width: 80%;
+            text-align: start;
+            font-size: 1.5rem;
+            margin: 0 auto;
+        }
+    
+    #borrarTareas {
+        margin-top: 2rem;
+    }

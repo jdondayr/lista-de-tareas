@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- Font Aweasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Lista de Taresas</title>
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <div class="titulo">
+            <h1>Checklist</h1>
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <div class="introduceTareas">
+            <input id="inputTareas" type="text" placeholder="Introduce la tarea...">
+            <button id="añadirTarea">Añadir tarea</button>
+        </div>
+        <div class="contenedorTareas">
+            <div class="tareas">
+                <div class="tituloTareas">
+                    <h2>Por hacer</h2>
+                    <i class="fa-regular fa-square"></i>
+                </div>
+                <ul id="listaPorHacer"></ul>
+            </div>
+            <div class="tareas">
+                <div class="tituloTareas">
+                    <h2>Completadas</h2>
+                    <i class="fa-regular fa-square-check"></i>
+                </div>
+                <ul id="listaCompletadas"></ul>
+            </div>
+        </div>
+        <button id="borrarTareas">Eliminar todas las tareas</button>
+    </div>
+
+    <!-- JavaScript-->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
